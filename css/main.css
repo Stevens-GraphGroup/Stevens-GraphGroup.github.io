@@ -74,7 +74,7 @@ button{
 }
 form {
 	max-width: 300px;
-	margin:10px auto;
+	float:left;
 	padding: 10px 20px;
 	background: #f4f7f8;
 	border-radius: 8px;
