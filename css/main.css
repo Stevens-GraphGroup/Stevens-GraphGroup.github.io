@@ -37,12 +37,13 @@ img{
 
 .contact-info li.phone a{
 	background-image: url('../img/phone.png');
+}
 
 .navbar-brand{
 	background-image: url('../img/logo.png');
 }
 
-}
+
 .contact-info li.mail a{
 	background-image: url('../img/mail.png');
 	
