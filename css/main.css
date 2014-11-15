@@ -2,6 +2,8 @@ img{
 	max-width: 100%;
 	vertical-align: text-top;
 	border:0;
+	margin:auto;
+
 }
 .bioimage {
 	background-color: white;
