@@ -106,3 +106,8 @@ textarea{
 	border-spacing: 0;
 	border:0;
 }
+
+tr,td{
+	vertical-align: top;
+	
+}
