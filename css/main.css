@@ -109,5 +109,8 @@ textarea{
 
 tr,td{
 	vertical-align: top;
-	
+}
+
+td{
+	text-align:center;
 }
