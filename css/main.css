@@ -7,11 +7,12 @@ img{
 }
 .bioimage {
 	background-color: white;
-	border: 1px solid darkGray;
+	border: 50px solid darkGray;
 	display: block;
 	padding: 4px;
 	position: relative;
 	float: left;
+
 }
 
 #primary{
