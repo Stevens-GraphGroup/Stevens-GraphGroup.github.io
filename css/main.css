@@ -7,7 +7,8 @@ img{
 }
 .bioimage {
 	background-color: white;
-	border: 50px solid darkGray;
+	border: 1px solid darkGray;
+	border-radius: 50px;
 	display: block;
 	padding: 4px;
 	position: relative;
