@@ -6,6 +6,8 @@ img{
 
 }
 .bioimage {
+	width:200px;
+	height:200px;
 	margin-right:100px;
 	background-color: white;
 	border-radius: 50%;
