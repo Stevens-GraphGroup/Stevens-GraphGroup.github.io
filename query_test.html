@@ -14,39 +14,28 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="css/plugins/timeline.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/main.css" rel ="stylesheet">
 
-
-
 </head>
 <body>
 
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; background-color:#444;">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
                 <!--<img width="55px" src="img/logo.png" /> looks weird-->
-                <a class="navbar-brand" href="index.html">HBaaS</a>
-            </div>
+            <a class="navbar-brand" href="index.html">HBaaS</a>
+        </div>
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -85,13 +74,14 @@
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
-        </nav>
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">User Query</h1>
-                </div>
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">User Query</h1>
             </div>
+        </div>
     <form action = "#" method="post" id="proteinSeqSearchForm" enctype="multipart/form-data">
         <div class = "container-fluid">
             <div role="tabpanel">
@@ -99,19 +89,24 @@
                     <li role="presentation" class="active"><a href="#PasteASequence" aria-controls="Paste a Sequence" role="tab" data-toggle="tab">Paste a Sequence</a></li>
                     <li role="presentation"><a href="#UploadAFile" aria-controls="profile" role="tab" data-toggle="tab">Upload a file</a></li>
                     <li role="presentation"><a href="#Accession" aria-controls="messages" role="tab" data-toggle="tab">Accession / ID Lookup</a></li>
+                    <li role="presentation"><a href="#HmmProfile" aria-controls="profile" role="tab" data-toggle="tab">HMM Profile</a></li>
                 </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="PasteASequence">
-                        <br>
+                        <br />
                         <textarea name="seq" id="seq"></textarea>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="UploadAFile">
-                        <br>
+                        <br />
                         <input type="file" name="file" id="file">
                     </div>
                     <div role="tabpanel" class="tab-pane" id="Accession">
-                        <br>
-                        <input type="text" name="acc" id="acc" value="" title="Accession / ID" autocomplete="off">
+                        <br />
+                        <input type="text" name="acc" id="acc" title="Accession / ID" autocomplete="off">
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="HmmProfile">
+                        <br />
+                        <input type="file" name="file" id="HmmProfle">
                     </div>
                 </div>
             </div>
@@ -121,68 +116,27 @@
                 <legend>Sequence Database</legend>
                 <div class="container-fluid">
                     <p>Large collections</p>
+                    <label for = "genbank">
+                        <input id = "genbank" name = "seqdb" type = "radio" value = "genbank" title = "Sequence database" checked/>&nbsp;Genbank
+                    </label>
                     <label for="nr">
-                        <input id="nr" name="seqdb" type="radio" value="nr" title="Sequence database">&nbsp;NR
+                        <input id="nr" name = "seqdb" type="radio" value="nr" title="Sequence database"/>&nbsp;NR
                     </label>
                     <label for="refseq">
-                        <input id="refseq" name="seqdb" type="radio" value="refseq" title="Sequence database">&nbsp;RefSeq
+                        <input id="refseq" name = "seqdb" type="radio" value="refseq" title="Sequence database"/>&nbsp;RefSeq
                     </label>
                     <label for="uprot">
-                        <input id="uprot" name="seqdb"  type="radio" value="uniprotkb" title="Sequence database">&nbsp;UniProtKB
+                        <input id="uprot" name = "seqdb" type="radio" value="uniprotkb" title="Sequence database"/>&nbsp;UniProtKB
                     </label>
                     <label for="pfamseq">
-                        <input id="pfamseq" name="seqdb" type="radio" value="pfamseq" title="Sequence database">&nbsp;Pfamseq
-                    </label>
-                </div>
-                <div class = "container">
-                    <p>Annotated and Structures</p>
-                    <label for="sprot">
-                        <input id="sprot" name="seqdb" type="radio" value="swissprot" title="Sequence database">
-                            &nbsp;SwissProt
-                        </label>
-                    <label for="pdb">
-                        <input id="pdb" name="seqdb"  type="radio" value="pdb" title="Sequence database">
-                        &nbsp;PDB
-                        </label>
-                </div>
-                <div class="container">
-                    <p>Metagenomics and Environmental</p>
-                    <label for="unimes">
-                        <input id="unimes" name="seqdb" type="radio" value="unimes" title="Sequence database">&nbsp;UniMes
-                    </label>
-                    <label for="envnr">
-                        <input id="envnr" name="seqdb"  type="radio" value="env_nr" title="Sequence database">
-                        &nbsp;env NR
-                    </label>
-                </div>
-                <div class="container-fluid">
-                    <p>Representative Sets (UniProt)</p>
-                    <label for="rp75">
-                        <input id="rp75" name="seqdb" type="radio" value="rp75" title="Sequence database">
-                        &nbsp;rp75
-                    </label>
-                    <label for="rp55">
-                        <input id="rp55" name="seqdb" type="radio" value="rp55" title="Sequence database">
-                        &nbsp;rp55
-                    </label>
-                    <label for="rp35">
-                        <input id="rp35" name="seqdb" type="radio" value="rp35" title="Sequence database">
-                        &nbsp;rp35
-                    </label>
-                    <label for="rp15">
-                        <input id="rp15" name="seqdb" type="radio" value="rp15" title="Sequence database">
-                        &nbsp;rp15
-                    </label>
-                    <label for="uniprotrefprot">
-                        <input id="uniprotrefprot" name="seqdb" type="radio" value="uniprotrefprot" title="Sequence database">
-                        &nbsp;Reference Proteomes
+                        <input id="pfamseq" name = "seqdb"  type="radio" value="pfamseq" title="Sequence database"/>&nbsp;Pfamseq
                     </label>
                 </div>
                 <legend>Limited By Taxonomy</legend>
                 <input type="text" name="tax" id="tax" autocomplete="off">
-                <br>
-                <input type="submit" value="Submit" id="subbutton">
-                <input type="reset" value="Reset"  id="reset">
+                <br />
+                <button type="submit" id = "subbutton">Submit</button>
+                <button type="reset" id = "resbutton">Reset</button>
     </form>
 </div>
 

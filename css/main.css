@@ -67,7 +67,7 @@ fieldset{
 }
 
 button{
-	padding:10px 30px 10px 30px;
+	padding:10px 30px;
 	color:#FFF;
 	background-color: #428bca;
 	font-size: 18px;
@@ -79,6 +79,8 @@ button{
 	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
 	margin-bottom: 10px;
 }
+
+
 form {
 	width:100%;
 	float:left;
@@ -131,11 +133,7 @@ textarea {
 	border:0;
 }
 
-tr,td{
-	vertical-align: top;
-}
-
-td{
-	text-align:center;
-	width:30%;
+#resbutton,
+#subbutton{
+	padding:8px 20px;
 }
