@@ -1,4 +1,4 @@
-﻿var countries = {
+var taxonomy = {
     "AD": "Andorra",
     "AE": "United Arab Emirates",
     "AF": "Afghanistan",
