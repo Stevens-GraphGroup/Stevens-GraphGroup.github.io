@@ -23,6 +23,8 @@
 
     <link href="http://stevens-graphgroup.github.io/css/main.css" rel ="stylesheet"/>
 
+    <link href="css/styles.css" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -83,63 +85,63 @@
                 <h1 class="page-header">User Query</h1>
             </div>
         </div>
-    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post" id="proteinSeqSearchForm">  
-        <div class = "container-fluid">
-            <div role="tabpanel">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#PasteASequence" aria-controls="Paste a Sequence" role="tab" data-toggle="tab">Paste a Sequence</a></li>
-                    <li role="presentation"><a href="#UploadAFile" aria-controls="profile" role="tab" data-toggle="tab">Upload a file</a></li>
-                    <li role="presentation"><a href="#Accession" aria-controls="messages" role="tab" data-toggle="tab">Accession / ID Lookup</a></li>
-                    <li role="presentation"><a href="#HmmProfile" aria-controls="profile" role="tab" data-toggle="tab">HMM Profile</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="PasteASequence">
-                        <br />
-                        <textarea name="seq" id="seq" th:field="*{sequence}"></textarea>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="UploadAFile">
-                        <br />
-                   		<input type="file" name="file" id="file" th:field="*{upload_file}"/>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="Accession">
-                        <br />
-                        <input type="text" name="acc" id="acc" title="Accession / ID" th:field="*{accession_id}" autocomplete="off" />
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="HmmProfile">
-                        <br />
-                        <input type="file" name="file" id="HmmProfle" th:field="*{upload_file_hmmProfle}"/> 
+        <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post" id="proteinSeqSearchForm">  
+            <div class = "container-fluid">
+                <div role="tabpanel">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#PasteASequence" aria-controls="Paste a Sequence" role="tab" data-toggle="tab">Paste a Sequence</a></li>
+                        <li role="presentation"><a href="#UploadAFile" aria-controls="profile" role="tab" data-toggle="tab">Upload a file</a></li>
+                        <li role="presentation"><a href="#Accession" aria-controls="messages" role="tab" data-toggle="tab">Accession / ID Lookup</a></li>
+                        <li role="presentation"><a href="#HmmProfile" aria-controls="profile" role="tab" data-toggle="tab">HMM Profile</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="PasteASequence">
+                            <br />
+                            <textarea name="seq" id="seq" th:field="*{sequence}"></textarea>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="UploadAFile">
+                            <br />
+                       		<input type="file" name="file" id="file" th:field="*{upload_file}"/>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Accession">
+                            <br />
+                            <input type="text" name="acc" id="acc" title="Accession / ID" th:field="*{accession_id}" autocomplete="off" />
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="HmmProfile">
+                            <br />
+                            <input type="file" name="file" id="HmmProfle" th:field="*{upload_file_hmmProfle}"/> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <br/>
+            <br/>
 
-                <section>Sequence Database</section>
-                <div class="container-fluid">
-                    <p>Large collections</p>
-                    <label for = "genbank">
-                        <input id = "genbank" name = "seqdb" th:field="*{database}" type = "radio" value = "genbank" title = "Sequence database" checked="checked" />&nbsp;Genbank
-                    </label>
-                    <label for="nr">
-                        <input id="nr" name = "seqdb" th:field="*{database}" type="radio" value="nr" title="Sequence database"/>&nbsp;NR
-                    </label>
-                    <label for="refseq">
-                        <input id="refseq" name = "seqdb" th:field="*{database}" type="radio" value="refseq" title="Sequence database"/>&nbsp;RefSeq
-                    </label>
-                    <label for="uprot">
-                        <input id="uprot" name = "seqdb" th:field="*{database}" type="radio" value="uniprotkb" title="Sequence database"/>&nbsp;UniProtKB
-                    </label>
-                    <label for="pfamseq">
-                        <input id="pfamseq" name = "seqdb" th:field="*{database}" type="radio" value="pfamseq" title="Sequence database"/>&nbsp;Pfamseq
-                    </label>
-                </div>
-                <section>Limited By Taxonomy</section>
-                <input type="text" name="tax" id="tax" th:field="*{taxonomy}"/>
-                <br />
-                <button type="submit" id = "subbutton">Submit</button>
-                <button type="reset" id = "resbutton">Reset</button>
-    </form>
-</div>
+                    <section>Sequence Database</section>
+                    <div class="container-fluid">
+                        <p>Large collections</p>
+                        <label for = "genbank">
+                            <input id = "genbank" name = "seqdb" th:field="*{database}" type = "radio" value = "genbank" title = "Sequence database" checked="checked" />&nbsp;Genbank
+                        </label>
+                        <label for="nr">
+                            <input id="nr" name = "seqdb" th:field="*{database}" type="radio" value="nr" title="Sequence database"/>&nbsp;NR
+                        </label>
+                        <label for="refseq">
+                            <input id="refseq" name = "seqdb" th:field="*{database}" type="radio" value="refseq" title="Sequence database"/>&nbsp;RefSeq
+                        </label>
+                        <label for="uprot">
+                            <input id="uprot" name = "seqdb" th:field="*{database}" type="radio" value="uniprotkb" title="Sequence database"/>&nbsp;UniProtKB
+                        </label>
+                        <label for="pfamseq">
+                            <input id="pfamseq" name = "seqdb" th:field="*{database}" type="radio" value="pfamseq" title="Sequence database"/>&nbsp;Pfamseq
+                        </label>
+                    </div>
+                    <section>Limited By Taxonomy</section>
+                    <input type="text" name="#autocomplete-dynamics" id="tax" th:field="*{taxonomy}"/>
+                    <br />
+                    <button type="submit" id = "subbutton">Submit</button>
+                    <button type="reset" id = "resbutton">Reset</button>
+        </form>
+    </div>
 
     <script src="http://stevens-graphgroup.github.io/js/jquery-1.11.0.js"></script>
 
