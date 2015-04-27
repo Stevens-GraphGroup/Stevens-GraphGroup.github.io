@@ -1515,9 +1515,9 @@
 	"1514":"Eukaryota Rhodophyta Florideophyceae",
 	"1515":"Eukaryota Carpediemonas-likeorganisms Hicanonectes",
 	"1516":"Viruses dsRNAviruses Partitiviridae",
-	/*"1517":"Eukaryota Stramenopiles Oomycetes Lagenidiales",
+	"1517":"Eukaryota Stramenopiles Oomycetes Lagenidiales",
 	"1518":"Eukaryota Rhizaria Polycystinea Spumellaria",
 	"1519":"Bacteria Firmicutes Bacilli Bacillales",
 	"1520":"Eukaryota Metazoa Gnathostomulida Bursovaginoidea",
-	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida" */
+	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida" 
 }
