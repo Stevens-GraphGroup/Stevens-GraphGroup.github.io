@@ -98,7 +98,7 @@
 	"97":"Eukaryota Stramenopiles Bicosoecida Bicosoecidae",
 	"98":"Viruses dsRNAviruses Reoviridae Spinareovirinae",
 	"99":"Viruses ssRNApositive-strandviruses,noDNAstage",
-	"100":"Eukaryota Rhodophyta Florideophyceae",
+	/*"100":"Eukaryota Rhodophyta Florideophyceae",
 	"101":"Eukaryota Alveolata Dinophyceae environmental",
 	"102":"Eukaryota Fungi Entomophthoromycota",
 	"103":"Eukaryota Diplomonadida Hexamitidae Hexamitinae",
@@ -1519,5 +1519,5 @@
 	"1518":"Eukaryota Rhizaria Polycystinea Spumellaria",
 	"1519":"Bacteria Firmicutes Bacilli Bacillales",
 	"1520":"Eukaryota Metazoa Gnathostomulida Bursovaginoidea",
-	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida"
+	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida" */
 }
