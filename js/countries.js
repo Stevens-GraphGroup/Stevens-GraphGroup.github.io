@@ -1519,5 +1519,5 @@
 	"1518":"Eukaryota Rhizaria Polycystinea Spumellaria",
 	"1519":"Bacteria Firmicutes Bacilli Bacillales",
 	"1520":"Eukaryota Metazoa Gnathostomulida Bursovaginoidea",
-	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida",
-}",",
+	"1521":"Eukaryota Alveolata Apicomplexa Aconoidasida"
+}
