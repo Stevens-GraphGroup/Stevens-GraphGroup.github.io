@@ -16,6 +16,13 @@ img{
 
 }
 
+.benchimage{
+	display: inline-block;
+	width:200px;
+	height:200px;
+	
+}
+
 #primary{
 	width:40%;
 	float:left;
@@ -137,4 +144,3 @@ textarea {
 #subbutton{
 	padding:8px 20px;
 }
-
